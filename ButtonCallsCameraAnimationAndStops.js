@@ -4,14 +4,16 @@
 var cameraAnimation;
 var camera;
 
+//selecting the camera
 function initialize()
 {
 	cameraAnimation = true;
 	camera = scene.getObjectByName("MainCameraOld2");
-	console.log(camera);
+	console.log(camera); //if you want to monitor the log
 	camera.mixer.pause();
 }
 
+//button "wating" to be clicked so it can start the animation
 
 function update(delta)
 {
